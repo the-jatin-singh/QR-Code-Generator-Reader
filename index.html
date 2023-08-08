@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Genrator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    
+    <div class="main-container">
+        <div class="container"> 
+            <p>Enter your text or URL</p>
+            <input class="" type="text" placeholder="Text/URL">
+
+            <div class="img-box">
+                <img src="" id="qr-img">
+            </div>
+
+            <button>Generate QR</button>
+            <button class="download-btn">Download QR <i class="fa-solid fa-qrcode"></i></button>
+            
+            <div class="nav-element">
+                <p>Read QR</p>
+                <i class="fa-solid fa-qrcode"></i> 
+            </div>
+        </div>
+
+        <!-- scan qr -->   
+        <div class="container2">
+            <form action="#">
+                <input type="file" id="submitQR" hidden>
+                <img src="" alt="Uploaded QR COde">
+                <div class="content">
+                    <i class="fa fa-cloud-upload"></i>
+                    <p>Upload QR Code</p>
+                </div>
+            </form>
+
+            <div class="nav-element2">
+                <p>Generate QR</p>
+                <i class="fa-solid fa-qrcode"></i> 
+            </div>
+
+            <div class="details">
+                <textarea disabled></textarea>
+                <div class="upload-btns">
+                    <button class="close">Close</button>
+                    <button class="copy">Copy</button>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+
+
+
+    
+
+
+    
+    <footer>
+        <p>I hope you liked it. <a target="_blank" class="footer-link" href="https://github.com/the-jatin-singh">My GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    </footer>
+    
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
